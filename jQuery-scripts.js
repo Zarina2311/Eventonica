@@ -140,4 +140,31 @@ $(document).ready(() => {
         let eventID = $("#save-event-id").val();
         eventRecommender.saveUserEvent(userID, eventID);
     });
+
+    //Add API of Ticketmaster
+    $("#event-keyword-submit").click(function(event){
+        event.preventDefault();
+
+        const keyword = $("#event-keyword-search").val();
+        const url = `https://app.ticketmaster.com/discovery/v2/events?apikey=7elxdku9GGG5k8j0Xm8KWdANDgecHMV0&keyword=${keyword}&unit=miles&source=ticketmaster&locale=*&countryCode=US&preferredCountry=us`;
+        
+        $.getJSON(url, function(data) {
+            let addedEvents = [];
+            let events = data._embedded.events;
+
+            $.each(events, function(key, event) {
+                let id = event.id;
+                let name = event.name;
+                let date = event.dates.start.localDate;
+                let category = event.classifications[0].segment.name;
+                eventRecommender.addEvent(id, name, date, category);
+                addedEvents.push(`<li id="${key}">${name}</li>`);
+            });
+
+            $("<ul/>", {
+                "class": "import",
+                html: addedEvents.join("")
+            }).appendTo("#event-keyword-results");
+        });
+    });
 });

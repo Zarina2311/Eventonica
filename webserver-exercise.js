@@ -1,5 +1,3 @@
-//Pair programming assignment: Amy and Zarina
-
 console.log(__dirname);
 let http = require("http");
 let fs = require("fs");

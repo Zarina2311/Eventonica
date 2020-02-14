@@ -1,7 +1,7 @@
 /* Background color of the web page */
 body {
     background-color: rgba(204, 223, 197, 0.925);
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
 /* Header */
@@ -17,6 +17,19 @@ h2 {
     color:rgb(50, 87, 16);
 }
 
+/* Special button for Ticketmaster */
+button {
+    background-color: rgba(17, 49, 31, 0.884);
+    color: white;
+    padding: 8px 10px;
+    margin: 6px 0;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+    outline:none;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+}
+
 /* Header Three */
 h3 {
     font-style: italic;
@@ -25,7 +38,6 @@ h3 {
 
 /* Input text */
 input[type=text] {
-    width: 14%;
     padding: 5px;
     margin: 9px 0;
     border: 1px solid #ccc;
@@ -38,7 +50,6 @@ input[type=text] {
 /* Submit button */
 input[type=submit] {
     background-color: rgba(17, 49, 31, 0.884);
-    width: 7%;
     color: white;
     padding: 8px 10px;
     margin: 6px 0;
