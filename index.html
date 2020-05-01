@@ -10,7 +10,6 @@
     <div>
         <h3>All Users</h3>
         <ul id="all-users">
-            <!-- Using jQuery to display all Users here -->
         </ul>
         
         <h3>Add User</h3>
@@ -36,12 +35,28 @@
     </div>
     
     <br/>
+
+    <h2>Import Events from Ticketmaster</h2>
+
+    <div>
+        <form id="event-keyword-search-form">
+            <label>Event keyword search:</label>
+            <input type="text" id="event-keyword-search">
+            </br>
+            <button id="event-keyword-submit">Import first event from Ticketmaster</button>
+            <br/>
+        </form>
+            <h4>Results:</h4>
+            <ol id="event-keyword-results">
+            </ol>
+    </div>
+    
+    <br/>
     
     <h2>Event Management</h2>
     <div>
         <h3>All Events</h3>
         <ul id="all-events">
-            <!-- Using jQuery to display all Events here -->
         </ul>
         
         <h3>Add Event</h3>
@@ -87,7 +102,6 @@
     </form>
     <h4>Results:</h4>
     <ol id="event-date-results">
-        <!-- Using jQuery to add search results here-->
     </ol>
 </div>
 
@@ -101,7 +115,6 @@
     </form>
     <h4>Results:</h4>
     <ol id="event-category-results">
-        <!-- Using jQuery to add search results here-->
     </ol>
 </div>
 
@@ -120,7 +133,6 @@
 
 <script src="events.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
-<script src="jQuery-scripts.js"></script>
 </body>
 
 </html>
