@@ -23,11 +23,17 @@ function AddEventForm() {
     <form onSubmit={handleSubmit}>
       <h4>Add Event</h4>
       <label className="input-label">Event name</label>
+      <br />
       <input type="text" name="name" />
+      <br />
       <label className="input-label">Event date</label>
+      <br />
       <input type="text" name="date" />
+      <br />
       <label className="input-label">Event category</label>
+      <br />
       <input type="text" name="category" />
+      <br />
       <input type="submit" />
     </form>
   );

@@ -21,7 +21,9 @@ function AddUserForm() {
     <form onSubmit={handleSubmit}>
       <h4>Add User</h4>
       <label className="input-label">User name</label>
+      <br />
       <input type="text" name="name" />
+      <br />
       <input type="submit" />
     </form>
   );
