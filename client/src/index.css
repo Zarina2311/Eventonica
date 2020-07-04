@@ -1,6 +1,6 @@
 body {
-  background-color: #45755d;
-  color: white;
+  background-color: #e7ddcf;
+  color: #5e7e84;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -16,37 +16,37 @@ code {
 }
 
 h1 {
-  font-family: fantasy;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
   font-size: 55px;
-  text-align: center;
 }
 
 h2 {
   font-family: cursive;
   font-weight: lighter;
   font-size: 35px;
-  text-align: left;
+  margin-right: 900px;
 }
 
 h4 {
-  font-family: cursive;
-  font-weight: lighter;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 23px;
-  text-align: center;
+  color: #bea586;
+  font-weight: bolder;
 }
 
 .input-label {
-  /* display: block; */
   margin-bottom: 0.5em;
-  text-align: center;
+  display: inline-block;
+  font-size: smaller;
 }
 
 /* Input text */
 input[type="text"] {
-  padding: 5px;
+  padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 9px;
-  font-size: 13px;
+  border-radius: 20px;
+  font-size: 15px;
   outline: none;
   margin-bottom: 1em;
   color: rgba(90, 43, 67, 0.884);
@@ -54,13 +54,14 @@ input[type="text"] {
 
 /* Submit button */
 input[type="submit"] {
-  background-color: rgba(13, 49, 30, 0.884);
+  background-color: #5e7e84;
   color: white;
-  padding: 8px 25px;
+  padding: 10px 70px;
   border: none;
-  border-radius: 13px;
+  border-radius: 25px;
   cursor: pointer;
   outline: none;
-  margin-top: 1em;
+  margin-top: 0;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.438);
+  margin-bottom: 2em;
 }

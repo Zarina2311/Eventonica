@@ -21,6 +21,7 @@ function DeleteEventForm() {
       <input type="text" name="id" />
       <br />
       <input type="submit" />
+      <br />
     </form>
   );
 }
