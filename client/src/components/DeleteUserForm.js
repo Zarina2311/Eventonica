@@ -8,17 +8,16 @@ function DeleteUserForm() {
 
     fetch("http://localhost:3000/users/" + id, {
       headers: {
-        Accept: "application/json"
+        Accept: "application/json",
       },
-      method: "DELETE"
+      method: "DELETE",
     });
   }
   return (
     <form onSubmit={handleSubmit}>
       <h4>Delete User</h4>
-      <label>User ID:</label>
+      <label>User ID</label>
       <input type="text" name="id" />
-      <br />
       <input type="submit" />
     </form>
   );
