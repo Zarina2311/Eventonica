@@ -1,5 +1,5 @@
 body {
-  background-color: #3a5f4c;
+  background-color: #45755d;
   color: white;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -7,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
 code {
@@ -17,47 +18,49 @@ code {
 h1 {
   font-family: fantasy;
   font-size: 55px;
+  text-align: center;
 }
 
 h2 {
-  text-align: left;
-  margin-left: 2em;
   font-family: cursive;
   font-weight: lighter;
   font-size: 35px;
+  text-align: left;
 }
 
 h4 {
-  text-align: center;
   font-family: cursive;
   font-weight: lighter;
   font-size: 23px;
+  text-align: center;
 }
 
-p {
-  margin-right: 180px;
+.input-label {
+  /* display: block; */
+  margin-bottom: 0.5em;
+  text-align: center;
 }
 
 /* Input text */
 input[type="text"] {
   padding: 5px;
-  margin: 9px 10px;
   border: 1px solid #ccc;
   border-radius: 9px;
   font-size: 13px;
   outline: none;
+  margin-bottom: 1em;
   color: rgba(90, 43, 67, 0.884);
 }
 
 /* Submit button */
 input[type="submit"] {
-  background-color: rgba(9, 37, 22, 0.884);
+  background-color: rgba(13, 49, 30, 0.884);
   color: white;
   padding: 8px 25px;
-  margin: 6px 0;
   border: none;
   border-radius: 13px;
   cursor: pointer;
   outline: none;
+  margin-top: 1em;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.438);
 }
