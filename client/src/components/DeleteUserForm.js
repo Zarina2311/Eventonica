@@ -16,7 +16,7 @@ function DeleteUserForm() {
   return (
     <form onSubmit={handleSubmit}>
       <h4>Delete User</h4>
-      <label>User ID</label>
+      <label className="input-label">User ID</label>
       <input type="text" name="id" />
       <input type="submit" />
     </form>
