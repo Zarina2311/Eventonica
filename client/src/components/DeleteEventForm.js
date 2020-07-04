@@ -8,20 +8,17 @@ function DeleteEventForm() {
 
     fetch("http://localhost:3000/events/" + id, {
       headers: {
-        Accept: "application/json"
+        Accept: "application/json",
       },
-      method: "DELETE"
+      method: "DELETE",
     });
   }
   return (
     <form onSubmit={handleSubmit}>
       <h4>Delete Event</h4>
-      <label>Event ID:</label>
+      <label className="input-label">Event ID</label>
       <input type="text" name="id" />
-      <br />
       <input type="submit" />
-      <br />
-      <br />
     </form>
   );
 }
