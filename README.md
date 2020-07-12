@@ -1,2 +1,6 @@
-Eventonica is a web app to manage events from Techtonica's curriculum outlined here:
-https://github.com/Techtonica/curriculum/tree/master/projects/eventonica.
+# Eventonica
+
+Eventonica is an event management web app. It allows users create, save, and delete events.
+Users can also search for events by keywords.
+
+Written in ​React.js, Node.js, Express.js, and PostgreSQL​.
