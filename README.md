@@ -24,4 +24,4 @@ Written in ​React.js, Node.js, Express.js, and PostgreSQL​.
 - npm install
 - npm start
 
-Once both servers are running (Express on port 3001 and React on port 3000), open http://localhost:3000 to view the app in the browser.
+Once both servers are running (Express on port 3000 and React on port 3001), open http://localhost:3001 to view the app in the browser.
